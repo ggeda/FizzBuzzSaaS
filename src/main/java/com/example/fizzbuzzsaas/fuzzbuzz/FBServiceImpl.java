@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class FBServiceImpl implements FBService {
 
 	@Override
-	public Map<String, List<Integer>> fizzbuzz(int upperlimit) {
+	public Map<String, List<Integer>> fizzbuzz(final int upperlimit) {
 
 		Map<String, List<Integer>> fbMapList = new HashMap<>();
 		List<Integer> fizzList = new ArrayList<>();
