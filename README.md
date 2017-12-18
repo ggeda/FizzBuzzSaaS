@@ -2,14 +2,21 @@
 Fizzbuzz Solution as a web service
 
 Requirement:
-> For multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. 
+> For multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
+ 
 > For numbers which are multiples of both three and five print “FizzBuzz”.
+
 > Non integer path parameters should result in an error.
+
 > Please demonstrate use of Java 8
+
 > Please demonstrate use of one or more design patterns and add comments as to why you choose that pattern.
+
 > This service should consume an upper boundry as a path parameter, and determine which numbers would print "Fizz", "Buzz", and "FizzBuzz". 
-  It should then be able to respond to the caller with these numbers, grouped by Fizz, Buzz, and FizzBuzz
+  It should then be able to respond to the caller with these numbers, grouped by Fizz, Buzz, and FizzBuzz.
+  
 > Code should be delivered as a standalone deliverable with instructions on how to run.
+
 > Provide your finished results in a git repository
 
 # Steps to build and run the web app:
