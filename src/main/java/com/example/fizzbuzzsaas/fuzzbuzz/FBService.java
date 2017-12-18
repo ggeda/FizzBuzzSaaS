@@ -5,5 +5,5 @@ import java.util.Map;
 
 public interface FBService {
 
-	Map<String, List<Integer>> fizzbuzz(int upperlimit);
+	Map<String, List<Integer>> fizzbuzz(final int upperlimit);
 }
