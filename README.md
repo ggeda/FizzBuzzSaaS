@@ -19,6 +19,14 @@ Requirement:
 
 > Provide your finished results in a git repository
 
+> # I realized that the requirement is a bit contradictory on what to return.
+    
+    >In the section 'What is Fizz Buzz' ,it discuss that, instead of the number to return Fizz or Buzz or FizzBuzz.
+    
+    >But, in the example and the instruction section , it explicitly stated, a response like this : {"Fizz": [3, 6, 9, 12],"Buzz": [5, 10],"FizzBuzz": [15]}
+    
+    >Since the example is explicit, my solution response looks like the example : {"Fizz": [3, 6, 9, 12],"Buzz": [5, 10],"FizzBuzz": [15]}
+
 # Steps to build and run the web app:
 
 There are two ways to run the application:
