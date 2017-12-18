@@ -17,7 +17,7 @@ public class FBServiceImpl implements FBService {
 
 		Map<String, List<Integer>> fbMapList = new HashMap<>();
 		List<Integer> fizzList = new ArrayList<>();
-		List<Integer> bizzList = new ArrayList<>();
+		List<Integer> buzzList = new ArrayList<>();
 		List<Integer> fizzBizzList = new ArrayList<>();
 
 		IntStream.rangeClosed(1, upperlimit).parallel().forEachOrdered(i -> {
@@ -26,13 +26,13 @@ public class FBServiceImpl implements FBService {
 			} else if (i % 3 == 0 ) {
 				fizzList.add(i);
 			} else if (i % 5 == 0) {
-				bizzList.add(i);
+				buzzList.add(i);
 			}
 		});
 
 		fbMapList.put("Fizz", fizzList);
-		fbMapList.put("Bizz", bizzList);
-		fbMapList.put("FizzBizz", fizzBizzList);
+		fbMapList.put("Buzz", buzzList);
+		fbMapList.put("FizzBuzz", fizzBizzList);
 		return fbMapList;
 	}
 }

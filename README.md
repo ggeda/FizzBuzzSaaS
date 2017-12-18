@@ -15,19 +15,37 @@ Provide your finished results in a git repository
 
 There are two ways to run the application:
 
-1. Directly by running the included jar distrivution in the distribution directory.
-    java -jar distribution/fizzbizzsaas-1-kz.jar
+1. Directly by running the included jar distribution in the distribution directory.
+    java -jar distribution/fizzbuzzsaas-1-kz.jar
 
 Or ... build and run
 
 1. mvm clean install
-2. java -jar target/fizzbizzsaas-1-kz.jar
+2. java -jar target/fizzbuzzsaas-1-kz.jar
 ( this by default starts the application on port 8080)
 If there is a need to use port other than 8080, use this command, for example for port 9090:
-java -jar -Dserver.port=9090 target/fizzbizzsaas-1-kz.jar
+java -jar -Dserver.port=9090 target/fizzbuzzsaas-1-kz.jar
 
-# Test :
+# Test by a GET call :
 
-GET:  http://localhost:8080/fizzbuzz/15
+# GET:  
 
-RESULT: {"Fizz":[3,6,9,12],"Bizz":[5,10],"FizzBizz":[15]}
+http://localhost:8080/fizzbuzz/15
+
+# RESULT: 
+
+{
+    "FizzBuzz": [
+        15
+    ],
+    "Fizz": [
+        3,
+        6,
+        9,
+        12
+    ],
+    "Buzz": [
+        5,
+        10
+    ]
+}

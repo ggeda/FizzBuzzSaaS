@@ -41,19 +41,19 @@ public class FBServiceImplTest {
 	public void fizzbizz_returnValidValues() {
 
 		int upperbound = 15;
-		// {"Fizz": [3, 6, 9, 12],"Bizz": [5, 10],"FizzBizz": [15]}
+		// {"Fizz": [3, 6, 9, 12],"Buzz": [5, 10],"FizzBizz": [15]}
 		List<Integer> fizzExpected = Arrays.asList(3,6,9,12);
-		List<Integer> bizzExpected = Arrays.asList(5,10);
-		List<Integer> fizzBizzExpected = Arrays.asList(15);
+		List<Integer> buzzExpected = Arrays.asList(5,10);
+		List<Integer> fizzBuzzExpected = Arrays.asList(15);
 
 		Map<String, List<Integer>> fbresult = fbService.fizzbuzz(upperbound);
 
 		assertTrue("Fizz list is not valid:" + fbresult.get("Fizz"),
 				Arrays.equals(fizzExpected.toArray(), fbresult.get("Fizz").toArray()));
-		assertTrue("Bizz list is not valid" + fbresult.get("Bizz"),
-				Arrays.deepEquals(bizzExpected.toArray(), fbresult.get("Bizz").toArray()));
-		assertTrue("FizzBizz list is not valid" + fbresult.get("FizzBizz"),
-				Arrays.deepEquals(fizzBizzExpected.toArray(), fbresult.get("FizzBizz").toArray()));
+		assertTrue("Buzz list is not valid" + fbresult.get("Buzz"),
+				Arrays.deepEquals(buzzExpected.toArray(), fbresult.get("Buzz").toArray()));
+		assertTrue("FizzBuzz list is not valid" + fbresult.get("FizzBuzz"),
+				Arrays.deepEquals(fizzBuzzExpected.toArray(), fbresult.get("FizzBuzz").toArray()));
 
 		System.out.println("*******result is:");
 

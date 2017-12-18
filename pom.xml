@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>fizzbizzsaas</artifactId>
+	<artifactId>fizzbuzzsaas</artifactId>
 	<version>1-kz</version>
 	<packaging>jar</packaging>
 
-	<name>fizzbizzsaas</name>
-	<description>FizzBizz SAAS project with Spring Boot initialized with start.spring.io web dependency</description>
+	<name>fizzbuzzsaas</name>
+	<description>FizzBuzz SAAS project with Spring Boot initialized with start.spring.io web dependency</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
